@@ -1,0 +1,5 @@
+if we want to place something below one below other then 
+we willplace three 3 div's inside one div and if want to 
+place all of them in a single line then we uses display: flex, and to give space between them 
+we use justify-content: space-between
+
