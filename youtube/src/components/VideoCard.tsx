@@ -1,19 +1,21 @@
-export function VideoCard() {
+export function VideoCard(props: any) {
   return (
     <div>
-      <img src="/photo.jpg" className="rounded-xl"></img>
+      <img src={props.image} className="rounded-xl"></img>
       <div className="grid grid-cols-12 pt-2">
         <div className="col-span-1">
-          <img src="/channel.jpg" className={"rounded-full w-10 h-10"}></img>
+          <img src={props.thumbnail} className={"rounded-full w-10 h-10"}></img>
         </div>
         <div className="col-span-11 pl-5">
+            <div>
+                {props.title}
+            </div>
           <div className="col-span-11 pl-5">
-            TRUMP JUST DESTROYED SOUTH AFRICA'S PRESIDENT | Absolute Cinema of
-            Geopolitics!
+            {props.author}
           </div>
 
           <div className="col-span-11 pl-5 text-gray-400">
-            878,322 views 10 hours ago
+            {props.views} views | {props.timestamp}
           </div>
         </div>
       </div>
