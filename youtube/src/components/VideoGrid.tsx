@@ -7,6 +7,7 @@ const VIDEOS = [
     image: "photo.jpg",
     thumbnail: "channel.jpg",
     views: "800k",
+    author: "Adarsh",
     timeStamp: "10 hours ago",
   },
   {
@@ -14,6 +15,7 @@ const VIDEOS = [
     image: "photo.jpg",
     thumbnail: "channel.jpg",
     views: "800k",
+    author: "Adarsh",
     timeStamp: "10 hours ago",
   },
   {
@@ -21,13 +23,14 @@ const VIDEOS = [
     image: "photo.jpg",
     thumbnail: "channel.jpg",
     views: "800k",
+    author: "Adarsh",
     timeStamp: "10 hours ago",
   },
 ];
 
 export const VideoGrid = () => {
   return (
-    <div className="grid grid-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       {VIDEOS.map((video) => (
         <div>
           <VideoCard
@@ -35,6 +38,7 @@ export const VideoGrid = () => {
             image={video.image}
             thumbnail={video.thumbnail}
             views={video.views}
+            author={video.author}
             timeStamp={video.timeStamp}
           ></VideoCard>
         </div>
