@@ -1,17 +1,15 @@
 import { SearchBar } from "./Searchbar"
 
- export const Appbar =() =>{
-    return(
-        <div className="flex justify-between pt-1 p-3">
-            <div className="text-wd inline-flex items-center pb-2">
-                Youtube
-            </div>
-            <div>
-                <SearchBar/>
-            </div>
-            <div>
-                Sign in
-            </div>
+export const Appbar = () => {
+    return <div className="flex justify-between	pl-3 pr-3 pt-1">
+        <div>
+            Youtube
         </div>
-    )
- } 
+        <div>
+            <SearchBar />
+        </div>
+        <div>
+            Logout
+        </div>
+    </div>
+}
